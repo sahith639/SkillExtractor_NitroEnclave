@@ -1,7 +1,8 @@
 FROM python:3.8-slim
 
 WORKDIR /app
-COPY . .
+COPY ./vsock_server.py /app/vsock_server.py
+
 
 # Install Python deps
 RUN apt-get update && apt-get install -y \
