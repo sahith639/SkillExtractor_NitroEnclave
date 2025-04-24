@@ -1,9 +1,9 @@
 FROM python:3.8-slim
 
 WORKDIR /app
+COPY . .
 
-COPY vsock_server.py .
+RUN apt-get update && apt-get install -y gcc && \
+    pip install --no-cache-dir pandas numpy scikit-learn
 
-RUN pip install pandas numpy scikit-learn
-
-CMD ["python", "vsock_server.py"]
+CMD ["python3", "vsock_server.py"]
