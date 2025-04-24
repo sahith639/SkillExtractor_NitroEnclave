@@ -4,12 +4,15 @@ WORKDIR /app
 COPY . .
 
 # Install Python deps
-RUN apt-get update && apt-get install -y gcc \
+RUN apt-get update && apt-get install -y \
+    gcc \
     libstdc++6 \
     libtinfo5 \
-    libffi6 \
+    libffi-dev \
     libedit2 \
+    socat \
     && pip install --no-cache-dir pandas numpy scikit-learn
+
 
 #  Enable enclave console support
 RUN apt-get install -y socat
