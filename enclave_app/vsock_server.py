@@ -56,29 +56,35 @@ def start_vsock_server():
         server.listen(1)
         print("Enclave: Listening on vsock port", PORT)
 
-        conn, _ = server.accept()
-        with conn:
-            print("Enclave: Client connected")
+        while True:
+            conn, _ = server.accept()
+            try:
+                with conn:
+                    print("Enclave: Client connected")
 
-            data = b""
-            while True:
-                chunk = conn.recv(4096)
-                if not chunk:
-                    break
-                data += chunk
-                if b"<END>" in data:
-                    break
+                    data = b""
+                    while True:
+                        chunk = conn.recv(4096)
+                        if not chunk:
+                            break
+                        data += chunk
+                        if b"<END>" in data:
+                            break
 
-            data = data.replace(b"<END>", b"")
-            payload = json.loads(data.decode())
+                    data = data.replace(b"<END>", b"")
+                    payload = json.loads(data.decode())
 
-            sent_df = pd.read_json(payload["sentences"])
-            skills_df = pd.read_json(payload["skills"])
+                    sent_df = pd.read_json(payload["sentences"])
+                    skills_df = pd.read_json(payload["skills"])
 
-            result = compute_similarity(sent_df, skills_df)
+                    result = compute_similarity(sent_df, skills_df)
 
-            conn.sendall((json.dumps(result) + "<END>").encode())
-            print("Enclave: Sent results back")
+                    conn.sendall((json.dumps(result) + "<END>").encode())
+                    print("Enclave: Sent results back")
+            except Exception as e:
+                print("errpr")
+            finally:
+                conn.close()
 
 if __name__ == "__main__":
     start_vsock_server()
