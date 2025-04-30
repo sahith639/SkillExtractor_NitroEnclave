@@ -55,7 +55,6 @@ Oracle E-Business Suite Financials
 ESRI ArcGIS software
 Human resource management software HRMS
 Apache Avro
-Informatica software
 Quest Erwin Data Modeler
 SAS Data Integration Server
 Talend Data Fabric
@@ -423,18 +422,10 @@ Oracle Remote Data Capture
 SAS JMP
 Autocoders
 Drug coding software
-Relational database management software
 Oracle SQL Loader
 SAP BusinessObjects Crystal Reports
 Clinical trial management software
-Relational database software
-Allscripts healthcare automation software
-EpicCare Ambulatory Electronic Medical Records (EMR) software
-IBM Tivoli Access Management TAM
-Diameter
-IBM Tivoli Identity Management TIM
 Password management software
-Remote authentication dial-in user service RADIUS software
 Qualys Cloud Platform
 Patch and update management software
 Secure shell SSH software
@@ -472,12 +463,10 @@ Apache Airflow
 JavaScript Object Notation JSON
 RESTful API
 Fund accounting software
-Red Hat WildFly
 PTC Creo Parametric
 Oracle Siebel Marketing Resource Management
 SiSense Prism
 Data warehouse software
-Informatica Data Explorer
 SAP BusinessObjects Data Integrator
 IBM Unica Enterprise
 Medical condition coding software
@@ -595,7 +584,6 @@ Collaborative editing software
 Insightful S-PLUS
 Statistical software
 Compliance testing software
-IBM Lotus Notes
 GGY AXIS
 Oak Mountain Software AnnuityValue
 Pricing software
@@ -612,7 +600,6 @@ Stac Software ReachOut
 Symantec pcAnywhere
 Cost estimating software
 ADP Workforce Now
-Informatica Corporation PowerCenter
 Oracle Master Data Management MDM Suite
 SAP Master Data Management MDM
 Slido interaction software

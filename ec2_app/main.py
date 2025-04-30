@@ -21,7 +21,7 @@ if __name__ == '__main__':
             syll_df = bag_of_word_tagger(syll_df, intermediate_path, file_name, bow_intermediate_save)
 
         # Step 4: Skill embedding
-        n_skills = 676 if skill_type == 'dwa' else 18429
+        n_skills = 663 if skill_type == 'dwa' else 18429
         onet_df = embedd_skill_type(onet_path, skill_type, bert_model)
 
         # Step 5: Sentence embedding

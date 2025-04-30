@@ -42,6 +42,36 @@ def send_data_to_local_server():
         result = json.loads(response.decode())
         scores_df = pd.read_json(result["scores"], orient="split")
         sentence_ids_df = pd.read_json(result["sentence_ids"], orient="split")
+        student_skills_df = pd.read_csv("inputs/Student_Skills.csv")
+        student_skills_set = set(skill.lower().strip() for skill in student_skills_df.iloc[:, 0].dropna().tolist())
+        # ✅ Load DWA file and set skill_id as index
+        dwa_df = pd.read_csv("ONET_Data/dwa.csv")
+        if "DWA Title" not in dwa_df.columns:
+            raise ValueError("❌ 'DWA Title' column not found in DWA.csv")
+
+        top_skills_map = result.get("top_skills", {})
+        top_skills= []
+        for sid, skill_indices in top_skills_map.items():
+            print(f"\n Skills Required for Job ID {sid}:")
+            matched_skills = []
+            top_skills= []
+            for i, idx in enumerate(skill_indices, 1):
+                try:
+                    skill_name = dwa_df.iloc[idx]["DWA Title"]
+                    top_skills.append(skill_name)
+                    if skill_name.lower().strip() in student_skills_set:
+                        matched_skills.append(skill_name)
+                except IndexError:
+                    skill_name = f"[Invalid Index {idx}]"
+                    top_skills.append(skill_name)
+                except Exception:
+                    skill_name = f"[Invalid Index {idx}]"
+                
+                print(f"   {i}. {skill_name}")
+            match_score = len(matched_skills)
+            print(f"\n Job {sid}: {match_score}/10 skills matched ({(match_score/10)*100:.1f}%) for this specific student")
+            print(f" Following are the Matched Student Skills: {matched_skills}")
+
 
         scores_df.to_csv("shared_data/final_scores.csv", index=False)
         sentence_ids_df.to_csv("shared_data/final_sentence_ids.csv", index=False)

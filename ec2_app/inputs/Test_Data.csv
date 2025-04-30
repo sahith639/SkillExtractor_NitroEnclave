@@ -1,3 +1,104 @@
 syllabus_id,syllabus_text
-1,"Data Mining is the process of discovering interesting knowledge from large amounts of data stored either in databases, data warehouses, or other information repositories. Topics to be covered includes: Data Preprocessing, Data Mining Primitives, Languages, and System Architectures, Mining Association Rules from Large Databases, Classification and Prediction, Cluster Analysis, Mining Complex Types of Data, Data Warehouse and OLAP technology for data mining (time permits), and Applications and Trends in Data Mining. With the unprecedented rate at which data is being collected today in almost all fields of human endeavor, there is an emerging economic and scientific need to extract useful information from it. Data mining is the process of automatic discovery of patterns, changes, associations and anomalies in massive databases, and is a highly interdisciplinary field representing the confluence of several disciplines, including database systems, data warehousing, machine learning, statistics, algorithms, data visualization, and high-performance computing. This course is an introduction to the commonly used data mining techniques. In the first part of the course, students will develop a basic understanding of the basic concepts in data mining such as frequent pattern mining, association rule mining, basic techniques for data preprocessing such as normalization, regression, and classic matrix decomposition methods such as SVD, LU, and QR decompositions. In the second part of the course, students will develop a basic understanding of classification and clustering and be able to apply classic methods such as k-means, hierarchical clustering methods, nearest neighbor methods, association based classifiers. In the third part of the course, students will have a chance to study more advanced data mining applications such as feature selection in high-dimensional data, dimension reduction, and mining biological datasets. Upon successfully completing this course, you will: 1. Learn basic concepts, algorithms, and techniques in data mining, 2. Perform real data analysis using popular tools and languages (e.g., Python and libraries) 3. Prepare for innovative research in data mining. You will also learn HTML, CSS and React"
-2,"An in-depth survey of modern programming language features, computer programming and algorithmic problem solving with an emphasis on the Java language. Computers and code compilation; conditional statements, subprograms, loops, methods; object-oriented design, inheritance and polymorphism, abstract classes and interfaces; types, type systems, generic types, abstract data types, strings, arrays, linked lists; software development, modular code design, unit testing; strings, text and file I/ O; GUI components, GUI event handling; threads; comparison of Java to C, C++, and C#. Offered as CSDS 132 and ECSE 132. Counts as a CAS Quantitative Reasoning course. Counts as a Quantitative Reasoning course"
+1,"Job Summary:
+We are seeking a talented Java Full-Stack Software Developer to join our rapidly growing product team. The ideal candidate will have strong backend expertise in Java and Spring Boot and solid frontend development experience using React. You will work on modern cloud-native applications that support critical business functions, collaborating with cross-functional teams in an Agile environment.
+Responsibilities:
+Design, develop, test, and deploy scalable backend services using Java, Spring Boot, and REST APIs. Build responsive and dynamic user interfaces using React, TypeScript, and modern JavaScript. Participate in all phases of the SDLC, from requirements gathering to production support. Integrate with relational and NoSQL databases (e.g., PostgreSQL, MongoDB). Implement CI/CD pipelines and ensure cloud readiness using Docker and Kubernetes. Collaborate with product managers, UX designers, and QA engineers to deliver high-quality features. Write unit, integration, and end-to-end tests using JUnit, Jest, Cypress, etc. Troubleshoot production issues and optimize system performance.
+
+Required Skills & Qualifications:
+
+Bachelor’s degree in Computer Science, Engineering, or related field.
+
+3+ years of professional experience in Java and Spring Boot.
+
+2+ years of experience with React.js and frontend development.
+
+Strong knowledge of RESTful APIs, microservices architecture, and JSON.
+
+Familiarity with Git, Jenkins, and containerization tools (Docker/Kubernetes).
+
+Experience with SQL and NoSQL databases.
+
+Understanding of Agile methodologies and DevOps practices.
+
+Preferred Skills:
+
+Experience with cloud platforms (AWS/GCP/Azure).
+
+Knowledge of GraphQL, WebSockets, or Kafka.
+
+Exposure to Redux, Zustand, or other state management libraries.
+
+Familiarity with OAuth2 and JWT-based authentication.
+
+Benefits:
+
+Competitive salary and performance bonuses
+
+Flexible work schedule
+
+Comprehensive health, dental, and vision insurance
+
+401(k) with employer match
+
+Professional development reimbursement
+"
+2,"Position: Software Engineer – C# & Data Mining
+Location: Austin, TX (Hybrid)
+Type: Full-time
+Experience Level: Mid-to-Senior (4–6 years)
+
+Job Description:
+We are looking for a Software Engineer skilled in C# and data mining to join our advanced analytics group. You will develop data-rich applications that extract, analyze, and visualize insights from structured and unstructured data sources. Your work will directly support decision-making systems in industries such as healthcare, logistics, and finance.
+
+Responsibilities:
+
+Design and implement backend systems in C# (.NET 6/.NET Core) to support data extraction and transformation pipelines.
+
+Apply data mining techniques to discover patterns, clusters, and correlations from large datasets.
+
+Work with data scientists to embed ML models into production environments.
+
+Develop ETL jobs and integrate external data sources via APIs, FTP, or web scraping.
+
+Optimize database access using LINQ, stored procedures, and asynchronous processing.
+
+Build dashboards and reporting tools using Blazor, Angular, or Power BI (depending on need).
+
+Ensure code scalability, testability, and maintainability through solid software design.
+
+Required Skills:
+
+Strong experience with C# and .NET Core/Framework.
+
+Knowledge of data mining concepts, clustering, classification, and association rules.
+
+Proficient in SQL Server or PostgreSQL; able to write optimized queries.
+
+Experience with Python or R for prototyping models is a plus.
+
+Familiarity with REST APIs, JSON, XML, and secure data handling practices.
+
+Experience in Agile development and using tools like Azure DevOps or Jira.
+
+Preferred Skills:
+
+Exposure to big data platforms (e.g., Hadoop, Spark) is a plus.
+
+Knowledge of statistical libraries like ML.NET or Accord.NET.
+
+Experience with healthcare, e-commerce, or fraud detection data.
+
+Familiarity with Microsoft Azure services (Data Factory, Synapse, Azure ML).
+
+Benefits:
+
+Competitive salary based on experience
+
+Hybrid remote/onsite schedule
+
+Health, dental, vision, and wellness coverage
+
+Sponsored certifications and conferences
+
+Flexible hours and generous PTO
+"
