@@ -24,7 +24,7 @@ def literal_skill_mentions(text_block: str, skills_list):
     return list(set(mentioned))
 
 
-def compute_similarity(input_syllabi_df, input_skills_df, threshold=0.2, top_k=10, alpha=0.9, beta=0.1):
+def compute_similarity(input_syllabi_df, input_skills_df, threshold=0.0, top_k=10, alpha=0.9, beta=0.1):
     skills = input_skills_df.iloc[:, 0].tolist()
     skills_np = input_skills_df.iloc[:, 1:].to_numpy().astype(np.float32)
 
