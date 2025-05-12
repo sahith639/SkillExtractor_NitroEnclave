@@ -1,104 +1,145 @@
 syllabus_id,syllabus_text
-1,"Job Summary:
-We are seeking a talented Java Full-Stack Software Developer to join our rapidly growing product team. The ideal candidate will have strong backend expertise in Java and Spring Boot and solid frontend development experience using React. You will work on modern cloud-native applications that support critical business functions, collaborating with cross-functional teams in an Agile environment.
+1,"Position: Software Developer – Scalable Backend Systems
+Location: Denver, CO (Hybrid)
+Type: Full-time
+Experience Level: Mid-Level (3–5 years)
+
+Job Description:
+We are seeking a software developer to join our platform engineering team focused on building scalable backend systems. You’ll work on services that power core business functions, with an emphasis on performance, fault tolerance, and secure data exchange. This is a hands-on engineering role ideal for those who love designing elegant APIs, optimizing compute-heavy processes, and contributing to infrastructure tooling.
+
 Responsibilities:
-Design, develop, test, and deploy scalable backend services using Java, Spring Boot, and REST APIs. Build responsive and dynamic user interfaces using React, TypeScript, and modern JavaScript. Participate in all phases of the SDLC, from requirements gathering to production support. Integrate with relational and NoSQL databases (e.g., PostgreSQL, MongoDB). Implement CI/CD pipelines and ensure cloud readiness using Docker and Kubernetes. Collaborate with product managers, UX designers, and QA engineers to deliver high-quality features. Write unit, integration, and end-to-end tests using JUnit, Jest, Cypress, etc. Troubleshoot production issues and optimize system performance.
+Build and maintain modular backend services with a focus on high availability and concurrency.
+Design APIs and data models that serve both internal and external consumers.
+Optimize request handling, caching, and throughput for high-traffic applications.
+Collaborate with DevOps teams to containerize and deploy services across environments.
+Handle background job processing and task queuing for large-scale workflows.
+Document architectural decisions and technical workflows in a cross-functional team setup.
 
-Required Skills & Qualifications:
-
-Bachelor’s degree in Computer Science, Engineering, or related field.
-
-3+ years of professional experience in Java and Spring Boot.
-
-2+ years of experience with React.js and frontend development.
-
-Strong knowledge of RESTful APIs, microservices architecture, and JSON.
-
-Familiarity with Git, Jenkins, and containerization tools (Docker/Kubernetes).
-
-Experience with SQL and NoSQL databases.
-
-Understanding of Agile methodologies and DevOps practices.
-
-Preferred Skills:
-
-Experience with cloud platforms (AWS/GCP/Azure).
-
-Knowledge of GraphQL, WebSockets, or Kafka.
-
-Exposure to Redux, Zustand, or other state management libraries.
-
-Familiarity with OAuth2 and JWT-based authentication.
-
-Benefits:
-
-Competitive salary and performance bonuses
-
-Flexible work schedule
-
-Comprehensive health, dental, and vision insurance
-
-401(k) with employer match
-
-Professional development reimbursement
-"
-2,"Position: Software Engineer – C# & Data Mining
-Location: Austin, TX (Hybrid)
+Preferred Background:
+Strong experience developing backend systems in a compiled or statically typed language.
+Comfortable working with relational and document-based data stores.
+Familiarity with authentication, session handling, and role-based access control.
+Experience working in CI/CD-enabled environments with code reviews and automated testing.
+Exposure to distributed systems, observability tooling, and horizontal scaling strategies."
+2,"Position: Full-Stack Engineer – Business Applications
+Location: Remote (U.S.)
 Type: Full-time
 Experience Level: Mid-to-Senior (4–6 years)
 
 Job Description:
-We are looking for a Software Engineer skilled in C# and data mining to join our advanced analytics group. You will develop data-rich applications that extract, analyze, and visualize insights from structured and unstructured data sources. Your work will directly support decision-making systems in industries such as healthcare, logistics, and finance.
+We're hiring a full-stack engineer to help build robust, user-centric business applications that serve both clients and internal teams. This role requires fluency in both client-facing interfaces and the backend logic that powers them. You’ll be involved in shaping features end-to-end—from initial concept to production rollout.
 
 Responsibilities:
+Design and develop responsive user interfaces with clean UX patterns.
+Implement backend logic, including validations, transformations, and access controls.
+Build seamless integrations with third-party platforms, internal microservices, and data pipelines.
+Collaborate with designers, QA, and product managers to ship high-impact features.
+Optimize page load speeds, reduce API round trips, and improve render efficiency.
+Write automated tests to ensure robustness across the stack.
 
-Design and implement backend systems in C# (.NET 6/.NET Core) to support data extraction and transformation pipelines.
+Preferred Background:
+Experience delivering end-to-end features in both frontend and backend codebases.
+Skilled in building modern, component-based UIs and modular service layers.
+Familiarity with working in reactive state-driven applications and routing logic.
+Exposure to relational and NoSQL database interactions.
+Comfortable working with version control, environment configs, and runtime debugging."
+3,"Position: Software Engineer – High-Performance Backend Systems
+Location: Chicago, IL (Hybrid)
+Type: Full-time
+Experience Level: Mid-to-Senior (4–6 years)
 
-Apply data mining techniques to discover patterns, clusters, and correlations from large datasets.
+Job Description:
+We are hiring a backend-focused software engineer to join our core systems team responsible for developing the foundational services that power our transactional and analytical platforms. This role centers on designing highly concurrent, low-latency services that scale efficiently and handle data-intensive operations.
 
-Work with data scientists to embed ML models into production environments.
+Responsibilities:
+Architect and implement backend services that support heavy computation, caching, and high-throughput data transactions.
+Develop and expose RESTful interfaces that support downstream integrations and cross-team consumption.
+Refactor legacy components into modular services following event-driven and service-oriented design principles.
+Design domain models and data workflows that preserve integrity across edge cases and distributed operations.
+Partner with platform engineers to ensure observability, secure deployment, and disaster recovery mechanisms.
+Write automated tests for functional correctness, performance regressions, and API contract validation.
+Participate in technical design reviews and contribute to long-term architectural planning.
 
-Develop ETL jobs and integrate external data sources via APIs, FTP, or web scraping.
+Ideal Candidate Profile:
+Demonstrates fluency in compiled or statically typed languages used in performance-critical applications.
+Experienced in working with both row-based and columnar data stores.
+Proficient with asynchronous I/O patterns, concurrency control, and memory management.
+Familiar with inter-service communication patterns such as message brokers, pub-sub systems, or gRPC.
+Comfortable analyzing profiling metrics to optimize request latency and CPU/memory usage.
+Has worked in CI/CD environments with deployment automation and rollback strategies."
+4,"Position: Full-Stack Software Developer – Enterprise Solutions
+Location: Remote (US)
+Type: Full-time
+Experience Level: Mid-Level (3–5 years)
 
-Optimize database access using LINQ, stored procedures, and asynchronous processing.
+Job Description:
+We are looking for a full-stack software developer to help build business-critical tools used by enterprise clients. In this role, you will design and deliver seamless, responsive user experiences backed by secure, performant service layers. The ideal candidate bridges the gap between intuitive interfaces and rock-solid server-side logic.
 
-Build dashboards and reporting tools using Blazor, Angular, or Power BI (depending on need).
+Responsibilities:
+Translate stakeholder requirements into interactive user-facing applications with intuitive workflows and consistent design.
+Develop APIs and backend logic to support dashboard views, forms, and real-time updates.
+Ensure cross-browser compatibility and accessibility across various devices.
+Implement input validation, audit logging, and permission-based access workflows.
+Integrate with third-party platforms via secure endpoints and token-based authentication flows.
+Maintain clean, reusable code across the client and server, with attention to performance and modularity.
+Debug UI and backend issues across staging and production environments, coordinating closely with QA and DevOps.
 
-Ensure code scalability, testability, and maintainability through solid software design.
+Ideal Candidate Profile:
+Experienced in both server-side development and building rich client-side applications.
+Understands responsive design, client-side routing, and component-based architectures.
+Skilled in structuring service endpoints and managing application state.
+Proficient with handling user data securely, including role-based permissions and session management.
+Familiar with relational data modeling, indexing strategies, and building paginated or filtered endpoints.
+Comfortable with test-driven development and integration testing across environments."
+5,"Position: Data Engineer – Analytics Infrastructure & Pipelines
+Location: San Diego, CA (Onsite Preferred / Hybrid)
+Type: Full-time
+Experience Level: Senior (5+ years)
 
-Required Skills:
+Job Description:
+Our data platform team is seeking a seasoned data engineer to help evolve the analytics infrastructure that supports real-time insights and historical reporting. This role focuses on creating reliable data pipelines, enabling data governance, and optimizing flows for machine learning and business intelligence workloads.
 
-Strong experience with C# and .NET Core/Framework.
+Responsibilities:
+Design and implement scalable workflows that ingest, transform, and deliver data across multiple business domains.
+Define contracts for data ingestion, ensuring schema compliance and quality validation at every stage.
+Collaborate with data analysts and scientists to build high-quality datasets for dashboards and model training.
+Set up orchestration logic for batch and streaming jobs, handling retries, alerts, and logging.
+Maintain data catalogs, access controls, and versioning systems to track schema evolution and metadata lineage.
+Identify and mitigate bottlenecks in query performance and large-scale joins.
+Contribute to the documentation of architecture decisions, operational playbooks, and stakeholder-facing schema references.
 
-Knowledge of data mining concepts, clustering, classification, and association rules.
+Ideal Candidate Profile:
+Proficient in building ETL and ELT workflows for structured, semi-structured, and event-based data.
+Skilled in tuning analytical queries and optimizing storage for cost and speed.
+Familiar with data versioning, temporal tables, and upsert logic across transactional systems.
+Experienced with tools and frameworks for job orchestration, dependency graphs, and retries.
+Understands how to align pipelines with governance policies around privacy, retention, and compliance.
+Comfortable with both streaming and batch-based processing paradigms."
+6,"Position: Machine Learning Engineer – Applied Intelligence Systems
+Location: Boston, MA (Hybrid)
+Type: Full-time
+Experience Level: Senior (5+ years)
 
-Proficient in SQL Server or PostgreSQL; able to write optimized queries.
+Job Description:
+We are seeking an experienced Machine Learning Engineer to join our Applied Intelligence team, where you’ll design and deploy intelligent systems that power critical decision-making tools across our enterprise platform. This role blends algorithm development with real-world deployment—ideal for someone who thrives at the intersection of data science, systems engineering, and production infrastructure.
 
-Experience with Python or R for prototyping models is a plus.
+You will be responsible for building pipelines that take models from experimentation to scalable deployment, ensuring their performance, interpretability, and compliance in real-time environments.
 
-Familiarity with REST APIs, JSON, XML, and secure data handling practices.
+Responsibilities:
+Design, train, and evaluate models for tasks such as classification, regression, recommendation, and clustering.
+Build production-grade model pipelines that include feature engineering, versioning, validation, and drift detection.
+Collaborate with product and analytics teams to translate complex business goals into deployable learning systems.
+Optimize model inference for speed, memory, and throughput in batch and real-time serving scenarios.
+Integrate trained models into modular service architectures with proper monitoring and rollback mechanisms.
+Develop reproducible experiment workflows, incorporating dataset tracking and parameter logging for auditability.
+Work closely with data engineers to streamline feature pipelines and ensure data integrity across training and inference paths.
+Stay up to date with recent advancements in learning algorithms, optimization techniques, and responsible AI principles.
 
-Experience in Agile development and using tools like Azure DevOps or Jira.
-
-Preferred Skills:
-
-Exposure to big data platforms (e.g., Hadoop, Spark) is a plus.
-
-Knowledge of statistical libraries like ML.NET or Accord.NET.
-
-Experience with healthcare, e-commerce, or fraud detection data.
-
-Familiarity with Microsoft Azure services (Data Factory, Synapse, Azure ML).
-
-Benefits:
-
-Competitive salary based on experience
-
-Hybrid remote/onsite schedule
-
-Health, dental, vision, and wellness coverage
-
-Sponsored certifications and conferences
-
-Flexible hours and generous PTO
-"
+Ideal Candidate Profile:
+Strong background in mathematical modeling, including statistics, optimization, and numerical methods.
+Experienced in deploying models at scale and managing the entire ML lifecycle from experimentation to monitoring.
+Comfortable working with large, high-dimensional datasets from diverse domains (text, tabular, time-series, etc.).
+Familiar with performance profiling, model compression techniques, and cross-validation strategies.
+Understands the challenges of data drift, concept drift, and techniques for continuous learning or re-training in production.
+Demonstrates fluency in working with containerized environments, service orchestration, and scalable data infrastructure.
+Has experience embedding model output into APIs, decision engines, or customer-facing interfaces."

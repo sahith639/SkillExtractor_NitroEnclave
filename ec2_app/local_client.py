@@ -106,9 +106,9 @@ def generate_pdf_from_jds_and_skills(test_data_path, top_skills_map, dwa_df):
             safe_text = jd_text.encode('latin-1', 'replace').decode('latin-1')
             self.multi_cell(0, 8, safe_text)
 
-            self.set_font("Arial", "I", 11)
+            self.set_font("Arial", "BI", 11)
             self.set_text_color(60, 60, 60)
-            self.cell(0, 8, "Top Skills:", ln=True)
+            self.cell(0, 8, "Top 10 Skills Extracted by Our Skill Extraction Pipeline:", ln=True)
             self.set_font("Arial", "", 11)
             self.set_text_color(0, 0, 0)
             for skill in skills:
