@@ -2,7 +2,8 @@ import socket
 import json
 import pandas as pd
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import normalize
+import re
 
 
 PORT = 5005
