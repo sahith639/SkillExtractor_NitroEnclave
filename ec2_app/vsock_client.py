@@ -1,6 +1,7 @@
 import socket
 import json
 import pandas as pd
+from fpdf import FPDF
 
 PORT = 5005
 ENCLAVE_CID = 16  # Default CID assigned to Nitro Enclave
