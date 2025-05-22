@@ -97,7 +97,7 @@ def generate_pdf_from_jds_and_skills(test_data_path, top_skills_map, dwa_df):
             self.cell(0, 10, "Job Descriptions & Top Skills", ln=True, align="C")
             self.ln(5)
 
-        def job_section(self, jd_id, jd_text, skills):
+        def job_section(self, jd_id, jd_text, skills, sentences):
             self.set_font("Arial", "B", 13)
             self.set_text_color(30, 30, 30)
             self.cell(0, 10, f"Job Description {jd_id + 1}", ln=True)
@@ -111,9 +111,13 @@ def generate_pdf_from_jds_and_skills(test_data_path, top_skills_map, dwa_df):
             self.cell(0, 8, "Top 10 Skills Extracted by Our Skill Extraction Pipeline:", ln=True)
             self.set_font("Arial", "", 11)
             self.set_text_color(0, 0, 0)
-            for skill in skills:
+            for skill,sentence in zip(skills,sentences):
                 safe_skill = skill.encode('latin-1', 'replace').decode('latin-1')
+                self.set_font("Arial", "B", 11)
                 self.cell(0, 8, f"- {safe_skill}", ln=True)
+                sent = sentence.encode('latin-1', 'replace').decode('latin-1')
+                self.set_font("Arial", "", 11)
+                self.multi_cell(0, 8, f"Sentence - {sent}")
             self.ln(4)
 
     def get_top_skills(indices):
@@ -124,6 +128,23 @@ def generate_pdf_from_jds_and_skills(test_data_path, top_skills_map, dwa_df):
             except Exception:
                 names.append(f"[Invalid Skill ID {idx}]")
         return names
+    def get_relevant_sentences(indices, jd_id):
+        sentences = [] 
+        sent_id_df = pd.read_csv("shared_data/final_sentence_ids.csv")
+        sent_embedded_df = pd.read_csv("shared_data/sentences_embedded.csv")
+        for idx in indices:
+            try:
+                sent_id = sent_id_df.iloc[jd_id][idx+1]
+                sentence = sent_embedded_df[(sent_embedded_df['syllabus_id'] == jd_id+1) & (sent_embedded_df['sent_id'] == sent_id)]['syllabus_text']
+                if not sentence.empty:
+                    sentences.append(sentence.values[0])
+                    print(f"Sentence ID {sent_id} for JD ID {jd_id + 1}: {sentence.values[0]}")
+                else:
+                    sentences.append(f"[No Sentence Found for ID {idx}]")
+                       
+            except Exception:
+                sentences.append(f"[Invalid Sentence ID {idx}]")
+        return sentences
 
     pdf = UnicodePDF()
     pdf.set_auto_page_break(auto=True, margin=15)
@@ -134,7 +155,8 @@ def generate_pdf_from_jds_and_skills(test_data_path, top_skills_map, dwa_df):
         skill_indices = top_skills_map.get(str(jd_id+1), [])
         print(f"Processing JD ID {jd_id + 1} with {len(skill_indices)} skills")
         skill_names = get_top_skills(skill_indices)
-        pdf.job_section(jd_id, jd_text, skill_names)
+        sentences = get_relevant_sentences(skill_indices, jd_id)
+        pdf.job_section(jd_id, jd_text, skill_names, sentences)
 
     output_path = "shared_data/JobDescriptions_TopSkills.pdf"
     pdf.output(output_path)
